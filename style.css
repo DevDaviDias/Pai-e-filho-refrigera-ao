@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Gemunu Libre", sans-serif;
+}
+input, select {
+    font-size: 30px; 
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px black;
+    margin: 5px;
+}
+h1 {
+    font-size: 60px;
+    padding: 60px;
+}
+h1 > span {
+    color: rgba(115, 96, 193, 0.645);
+}
+.itensS {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 31px;
+}
+.itensS:hover {
+    background-color: rgb(197, 192, 192);
+    color: rgb(255, 255, 255);
+}
+.itensD {
+    height: 100px; 
+}

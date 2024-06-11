@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Gamja+Flower&family=Gemunu+Libre:wght@200..800&family=Sevillana&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&family=Stick+No+Bills:wght@200..800&display=swap" rel="stylesheet">
+    <title>PAi e filho refrigeração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PAi e filho <span>refrigeração</span></h1>
+    
+    <form id="paymentForm" action="https://api.sheetmonkey.io/form/gNmkCzVuSgBRPNQV9kg7Uw" method="post">
+        <input class="itens" type="date" name="Data" id="dataAtual"><br>
+        <input class="itens" type="text" name="Cliente" placeholder="Cliente:"><br>
+        <input class="itensD" type="text" name="Descrição" placeholder="Descrição:"><br>
+        <input class="itens" step="0.01" type="number" name="Receita" placeholder="Receita:"><br>
+        <input class="itens" step="0.01" type="number" name="Custo" placeholder="Custo:"><br>
+        <select class="itens" name="Pagamento" id="Pagamento" onchange="calcularLucro()">
+            <option value="Nao">Pagamento Não Realizado</option>
+            <option value="Sim">Pagamento Realizado</option>
+        </select><br>
+        <input class="itensS" type="submit" value="Submit"/>
+        <input class="itensS" type="reset" value="Limpar"/>
+    </form>
+    
+    <script>
+        // Função para calcular o lucro
+        // Função para calcular o lucro
+function calcularLucro() {
+    const receitaInput = document.querySelector('input[name="Receita"]');
+    const custoInput = document.querySelector('input[name="Custo"]');
+    const pagamento = document.querySelector('select[name="Pagamento"]').value;
+
+    // Se o pagamento não estiver realizado, limpar os campos de receita e custo e não calcular o lucro
+    if (pagamento === "Nao") {
+        receitaInput.value = '';
+        custoInput.value = '';
+        return;
+    }
+
+    // Se o pagamento estiver realizado, calcular o lucro normalmente
+    const receita = parseFloat(receitaInput.value) || 0;
+    const custo = parseFloat(custoInput.value) || 0;
+    const lucro = receita - custo;
+    console.log('Lucro:', lucro.toFixed(2));
+}
+
+    </script>
+</body>
+</html>
