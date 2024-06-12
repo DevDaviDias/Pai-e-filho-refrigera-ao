@@ -51,9 +51,11 @@
         });
 
         function calcularLucro() {
+
             const receitaInput = document.querySelector('input[name="Receita"]');
             const custoInput = document.querySelector('input[name="Custo"]');
-            const pagamento = document.querySelector('select[name="Pagamento"]').value;
+            const pagamento = document.querySelector('select[name="Pagamento"]').value; 
+            alert("Enviado com sucesso :)")
 
             if (pagamento === "Nao") {
                 return;  // Se o pagamento não foi realizado, não altera os valores
@@ -63,7 +65,7 @@
             const custo = parseFloat(custoInput.value) || 0;
             const lucro = receita - custo;
             console.log('Lucro:', lucro.toFixed(2));
-            alert("Enviado com sucesso :)")
+           
         }
 
         function validarFormulario() {
