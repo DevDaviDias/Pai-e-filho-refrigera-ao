@@ -29,3 +29,9 @@ h1 > span {
 .itensD {
     height: 100px; 
 }
+
+.tabela{
+    margin: 90px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(179, 179, 179);
+}
