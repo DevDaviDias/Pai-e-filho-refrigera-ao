@@ -11,6 +11,7 @@ input, select {
     box-shadow: 1px 1px 1px black;
     margin: 5px;
 }
+
 h1 {
     font-size: 60px;
     padding: 60px;
@@ -35,6 +36,23 @@ h1 > span {
     margin: 90px;
     background-color: rgb(255, 255, 255);
     color: rgb(179, 179, 179);
+}
+#dataAtual{
+    width: 231px;
+    height: 29px;
+}
+
+.container{
+    background-color: aqua;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    padding-top: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.254);
+    
+    
 }
 
 
