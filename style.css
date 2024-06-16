@@ -39,7 +39,7 @@ body{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-.container button{
+.container .tabela {
     width: 100%;
     height: 40px;
     border: none;

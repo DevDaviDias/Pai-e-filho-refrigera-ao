@@ -23,7 +23,7 @@
             <input class="img" type="text" name="img" placeholder="Imagem:" required><br>
             <input class="itens" step="0.01" type="number" name="Receita" placeholder="Receita:" required><br>
             <input class="itens" step="0.01" type="number" name="Custo" placeholder="Custo:" required><br>
-            <select class="itens" name="Pagamento" id="Pagamento" onchange="calcularLucro()" required>
+            <select class="tabela" name="Pagamento" id="Pagamento" onchange="calcularLucro()" required>
                 <option value="Nao">Pagamento Não Realizado</option>
                 <option value="Sim">Pagamento Realizado</option>
             </select><br>
@@ -33,12 +33,12 @@
     
 
     <section>
-        <button class="tabela">
+        <button >
            <a href="https://docs.google.com/spreadsheets/d/1Rv7CBdPA7QAlQNDa4ps0RCD5zNYwiku40-YT4x81dAM/edit?gid=0#gid=0">Acessar tabela</a>
         </button>
     </section>
     </div>
-    div
+    <div></div>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             // Obter a data atual no formato ISO (YYYY-MM-DD)
