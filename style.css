@@ -1,62 +1,55 @@
-* {
+body{
+    background: linear-gradient(-105deg, rgb(190, 227, 227), rgb(80, 155, 225) 40%, rgb(53, 100, 200));
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between ;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-align: center;
-    font-family: "Gemunu Libre", sans-serif;
 }
-input, select {
-    font-size: 30px; 
-    border-radius: 4px;
-    box-shadow: 1px 1px 1px black;
-    margin: 5px;
-}
-
-h1 {
-    font-size: 60px;
-    padding: 60px;
-}
-h1 > span {
-    color: rgba(115, 96, 193, 0.645);
-}
-.itensS {
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
-    font-size: 31px;
-}
-.itensS:hover {
-    background-color: rgb(197, 192, 192);
-    color: rgb(255, 255, 255);
-}
-.itensD {
-    height: 100px; 
-}
-
-.tabela{
-    margin: 90px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(179, 179, 179);
-}
-#dataAtual{
-    width: 231px;
-    height: 29px;
-}
-
 .container{
-    background-color: aqua;
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 10px;
-    padding-top: 40px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.254);
+    background-color: rgb(0,0,0,0.5);
     width: 400px;
-    height: 800px;
-    
-    
+    padding: 50px;
+    border-radius: 20px 5px 20px 5px ;
+    box-shadow: 0 20px 20px ;
+    position: relative;
 }
+.container h1{
+    color: white;
+    text-align: center;
+    margin: 20px 0 30px;
+    font-family: arial;
+    
+ }
+ .container  input{
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    background: transparent;
+    color:white;
+    letter-spacing: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px white solid;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.container button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(113, 113, 168, 0.623), white);
+    border-radius: 5px;
 
-
+} 
 
 
