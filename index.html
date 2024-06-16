@@ -27,12 +27,11 @@
                 <option value="Nao">Pagamento Não Realizado</option>
                 <option value="Sim">Pagamento Realizado</option>
             </select><br>
-            <input class="Enviar" type="submit" value="Enviar"/>
+            <input onclick="enviar()" class="Enviar" type="submit" value="Enviar"/>
             
         </form>
     
 
-    
         <button class="button">
            <a href="https://docs.google.com/spreadsheets/d/1Rv7CBdPA7QAlQNDa4ps0RCD5zNYwiku40-YT4x81dAM/edit?gid=0#gid=0">Acessar tabela</a>
         </button>
@@ -59,7 +58,6 @@
             const receitaInput = document.querySelector('input[name="Receita"]');
             const custoInput = document.querySelector('input[name="Custo"]');
             const pagamento = document.querySelector('select[name="Pagamento"]').value; 
-            alert("Enviado com sucesso :)")
 
             if (pagamento === "Nao") {
                 return;  // Se o pagamento não foi realizado, não altera os valores
@@ -84,6 +82,10 @@
             }
 
             return true;
+        }
+
+        enviar(){
+            alert("Enviado com sucesso :)")
         }
     </script>
 </body>
