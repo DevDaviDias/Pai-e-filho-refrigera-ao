@@ -80,12 +80,9 @@ body{
 
 @media (max-width: 700px) {
     .container{
-        background-color: rgb(0,0,0,0.5);
         width: 300px;
-        padding: 50px;
-        border-radius: 20px 5px 20px 5px ;
-        box-shadow: 0 20px 20px ;
-        position: relative;
+        padding: 40px;
+      
     }
 }
 
