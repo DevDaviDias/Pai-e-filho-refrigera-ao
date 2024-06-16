@@ -18,7 +18,14 @@ body{
     position: relative;
 }
 .container h1{
-    color: white;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 20px 0 30px;
+    font-family: arial;
+    
+ }
+ .container h1 span{
+    color: rgb(109, 163, 233);
     text-align: center;
     margin: 20px 0 30px;
     font-family: arial;
@@ -39,17 +46,38 @@ body{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-.container .tabela {
+.container .Enviar {
     width: 100%;
     height: 40px;
     border: none;
     color: white;
+    margin-top: 10px;
     padding: 10px 20px;
     font-size: 15px;
     cursor: pointer;
-    background: linear-gradient(to right, rgba(113, 113, 168, 0.623), white);
+    background: linear-gradient(to right, rgb(64, 113, 178),rgb(109, 163, 233));
     border-radius: 5px;
 
 } 
+
+.container .tabela {
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: rgb(31, 29, 29);
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(127, 159, 200), white);
+    border-radius: 5px;
+
+}
+.button{
+    text-decoration: none;
+   color: white;
+}
+
+
+
 
 
